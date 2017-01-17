@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">University Canteen</string>
+
+    <!--Столовая 1-->
+    <string name="canteen_1">Столовая 1</string>
+    <!--Столовая 2-->
+    <string name="canteen_2">Столовая 2</string>
+    <!--Столовая 3-->
+    <string name="canteen_3">Столовая 3</string>
+    <!--Буфет П-->
+    <string name="bufet_p">Буфет корпус "П"</string>
+    <!--Буфет Л-->
+    <string name="bufet_l">Буфет корпус "Л"</string>
+</resources>

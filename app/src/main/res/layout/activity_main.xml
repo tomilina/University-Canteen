@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ru.sibsau.universitycanteen.MainActivity">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        app:tabMode="scrollable"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--&lt;!&ndash; Столовая 1 &ndash;&gt;-->
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/colorCanteen1">-->
+    <!--<TextView-->
+    <!--android:id="@+id/canteen_1"-->
+    <!--style="@style/CategoryStyle"-->
+    <!--android:background="?android:attr/selectableItemBackground"-->
+    <!--android:text="@string/canteen_1" />-->
+    <!--</FrameLayout>-->
+
+    <!--&lt;!&ndash; Столовая 2 &ndash;&gt;-->
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/colorCanteen2">-->
+    <!--<TextView-->
+    <!--android:id="@+id/canteen_2"-->
+    <!--style="@style/CategoryStyle"-->
+    <!--android:background="?android:attr/selectableItemBackground"-->
+    <!--android:text="@string/canteen_2" />-->
+    <!--</FrameLayout>-->
+
+    <!--&lt;!&ndash; Столовая 3 &ndash;&gt;-->
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/colorCanteen3">-->
+    <!--<TextView-->
+    <!--android:id="@+id/canteen_3"-->
+    <!--style="@style/CategoryStyle"-->
+    <!--android:background="?android:attr/selectableItemBackground"-->
+    <!--android:text="@string/canteen_3" />-->
+    <!--</FrameLayout>-->
+
+    <!--&lt;!&ndash; Буфет П &ndash;&gt;-->
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/colorBufetP">-->
+    <!--<TextView-->
+    <!--android:id="@+id/bufet_p"-->
+    <!--style="@style/CategoryStyle"-->
+    <!--android:background="?android:attr/selectableItemBackground"-->
+    <!--android:text="@string/bufet_p" />-->
+    <!--</FrameLayout>-->
+
+    <!--&lt;!&ndash; Буфет Л &ndash;&gt;-->
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/colorBufetL">-->
+    <!--<TextView-->
+    <!--android:id="@+id/bufet_l"-->
+    <!--style="@style/CategoryStyle"-->
+    <!--android:background="?android:attr/selectableItemBackground"-->
+    <!--android:text="@string/bufet_l" />-->
+    <!--</FrameLayout>-->
+
+
+</LinearLayout>
