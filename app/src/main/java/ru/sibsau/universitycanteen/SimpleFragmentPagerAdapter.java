@@ -34,10 +34,10 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
         this.context = context;
     }
 
-    @Override
-    public Fragment getItem(int position) {
-        return PageFragment.newInstance(position + 1);
-    }
+//    @Override
+//    public Fragment getItem(int position) {
+//        return PageFragment.newInstance(position + 1);
+//    }
 
     @Override
     public CharSequence getPageTitle(int position) {
@@ -46,18 +46,23 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     }
 
 
-//    @Override
-//    public Fragment getItem(int position) {
-//        if (position == 0) {
-//            return new NumbersFragment();
-//        } else if (position == 1){
-//            return new FamilyFragment();
-//        } else if (position == 2) {
-//            return new ColorsFragment();
-//        } else {
-//            return new PhrasesFragment();
-//        }
-//    }
+    @Override
+    public Fragment getItem(int position) {
+
+        if (position == 0) {
+            return new Canteen_1();
+        } else if (position == 1) {
+            return new Canteen_2();
+        }  else if (position == 2) {
+            return new Canteen_3();
+        }  else if (position == 3) {
+            return new Canteen_2();
+        }  else if (position == 4) {
+            return new Canteen_2();
+        } else {
+            return PageFragment.newInstance(position + 1);
+        }
+    }
 
     @Override
     public int getCount() {

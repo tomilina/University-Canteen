@@ -1,9 +1,6 @@
-*.iml
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
-.DS_Store
-/build
-/captures
-.externalNativeBuild
+rm '.idea/compiler.xml'
+rm '.idea/copyright/profiles_settings.xml'
+rm '.idea/gradle.xml'
+rm '.idea/misc.xml'
+rm '.idea/modules.xml'
+rm '.idea/runConfigurations.xml'

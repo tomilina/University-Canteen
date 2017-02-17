@@ -11,4 +11,7 @@
     <string name="bufet_p">Буфет корпус "П"</string>
     <!--Буфет Л-->
     <string name="bufet_l">Буфет корпус "Л"</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
