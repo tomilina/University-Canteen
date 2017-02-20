@@ -25,22 +25,22 @@ public class Dish {
     public int getDishCategory() {
         int dishCategoryCode;
         switch (mDishCategory) {
-            case "Холодные":
+            case "ХОЛОДНЫЕ БЛЮДА":
                 dishCategoryCode = 1;
                 break;
-            case "Первые":
+            case "1-е БЛЮДА":
                 dishCategoryCode = 2;
                 break;
-            case "Вторые":
+            case "2-е БЛЮДА":
                 dishCategoryCode = 3;
                 break;
-            case "Гарниры":
+            case "ГАРНИРЫ":
                 dishCategoryCode = 4;
                 break;
-            case "Напитки":
+            case "НАПИТКИ":
                 dishCategoryCode = 5;
                 break;
-            case "Выпечка":
+            case "ВЫПЕЧКА":
                 dishCategoryCode = 6;
                 break;
             default:

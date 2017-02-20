@@ -48,19 +48,13 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-
-        if (position == 0) {
-            return new Canteen_1();
-        } else if (position == 1) {
-            return new Canteen_2();
-        }  else if (position == 2) {
-            return new Canteen_3();
-        }  else if (position == 3) {
-            return new Canteen_2();
-        }  else if (position == 4) {
-            return new Canteen_2();
-        } else {
-            return PageFragment.newInstance(position + 1);
+        switch (position) {
+            case 0: return new Canteen_1();
+            case 1: return new Canteen_2();
+            case 2: return new Canteen_3();
+            case 3: return new Bufet_P();
+            case 4: return new Bufet_L();
+            default: return PageFragment.newInstance(position + 1);
         }
     }
 

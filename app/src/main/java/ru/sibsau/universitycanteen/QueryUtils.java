@@ -28,7 +28,9 @@ public class QueryUtils {
 
 //    private static final String SAMPLE_JSON_RESPONSE = "{\"canteens_menu\": [{\"canteen_name\": \"fghjfghjfghj\", \"menu_items\": {\"category\": \"\\u0425\\u043e\\u043b\\u043e\\u0434\\u043d\\u044b\\u0435\", \"price\": 123.0, \"name\": \"\\u0421\\u0430\\u043b\\u0430\\u0442 \\u043a\\u0440\\u0430\\u0431\\u043e\\u0432\\u044b\\u0439 \\u0441 \\u043e\\u0433\\u0443\\u0440\\u0446\\u043e\\u043c\", \"weight\": \"123\"}}, {\"canteen_name\": \"ghjfghjghj\", \"menu_items\": {\"category\": \"\\u0425\\u043e\\u043b\\u043e\\u0434\\u043d\\u044b\\u0435\", \"price\": 234.0, \"name\": \"\\u0421\\u0430\\u043b\\u0430\\u0442 \\u043a\\u0440\\u0430\\u0431\\u043e\\u0432\\u044b\\u0439 \\u0441 \\u043e\\u0433\\u0443\\u0440\\u0446\\u043e\\u043c\", \"weight\": \"234234\"}}, {\"canteen_name\": \"retyerty\", \"menu_items\": {}}, {\"canteen_name\": \"\\u0421\\u0442\\u043e\\u043b\\u043e\\u0432\\u0430\\u044f 1\", \"menu_items\": {}}], \"metadata\": \"SibSAU Canteens Menu\"}";
 //    private static final String SAMPLE_JSON_RESPONSE = "{\"canteens_menu\": [{\"canteen_name\": \"fghjfghjfghj\", \"menu_items\": [{\"category\": \"\\u0425\\u043e\\u043b\\u043e\\u0434\\u043d\\u044b\\u0435\", \"price\": 123.0, \"name\": \"\\u0421\\u0430\\u043b\\u0430\\u0442 \\u043a\\u0440\\u0430\\u0431\\u043e\\u0432\\u044b\\u0439 \\u0441 \\u043e\\u0433\\u0443\\u0440\\u0446\\u043e\\u043c\", \"weight\": \"123\"}, {\"category\": \"\\u0425\\u043e\\u043b\\u043e\\u0434\\u043d\\u044b\\u0435\", \"price\": 123.0, \"name\": \"\\u0421\\u0430\\u043b\\u0430\\u0442 \\u043a\\u0440\\u0430\\u0431\\u043e\\u0432\\u044b\\u0439 \\u0441 \\u043e\\u0433\\u0443\\u0440\\u0446\\u043e\\u043c\", \"weight\": \"123\"}]}, {\"canteen_name\": \"ghjfghjghj\", \"menu_items\": [{\"category\": \"\\u0425\\u043e\\u043b\\u043e\\u0434\\u043d\\u044b\\u0435\", \"price\": 234.0, \"name\": \"\\u0421\\u0430\\u043b\\u0430\\u0442 \\u043a\\u0440\\u0430\\u0431\\u043e\\u0432\\u044b\\u0439 \\u0441 \\u043e\\u0433\\u0443\\u0440\\u0446\\u043e\\u043c\", \"weight\": \"234234\"}, {\"category\": \"\\u0425\\u043e\\u043b\\u043e\\u0434\\u043d\\u044b\\u0435\", \"price\": 234.0, \"name\": \"\\u0421\\u0430\\u043b\\u0430\\u0442 \\u043a\\u0440\\u0430\\u0431\\u043e\\u0432\\u044b\\u0439 \\u0441 \\u043e\\u0433\\u0443\\u0440\\u0446\\u043e\\u043c\", \"weight\": \"234234\"}]}, {\"canteen_name\": \"retyerty\", \"menu_items\": []}, {\"canteen_name\": \"\\u0421\\u0442\\u043e\\u043b\\u043e\\u0432\\u0430\\u044f 1\", \"menu_items\": []}], \"metadata\": \"SibSAU Canteens Menu\"}";
-    private static final String SAMPLE_JSON_RESPONSE = "{\"canteens_menu\": [{\"canteen_name\": \"fghjfghjfghj\", \"menu_items\": [{\"category\": \"\\u041f\\u0435\\u0440\\u0432\\u044b\\u0435\", \"price\": 23423.0, \"name\": \"\\u0411\\u043e\\u0440\\u0449 \\u0441 \\u0447\\u0435\\u0441\\u043d\\u043e\\u043a\\u043e\\u043c\", \"weight\": \"23423\"}, {\"category\": \"\\u0425\\u043e\\u043b\\u043e\\u0434\\u043d\\u044b\\u0435\", \"price\": 123.0, \"name\": \"\\u0421\\u0430\\u043b\\u0430\\u0442 \\u043a\\u0440\\u0430\\u0431\\u043e\\u0432\\u044b\\u0439 \\u0441 \\u043e\\u0433\\u0443\\u0440\\u0446\\u043e\\u043c\", \"weight\": \"123\"}]}, {\"canteen_name\": \"ghjfghjghj\", \"menu_items\": [{\"category\": \"\\u041f\\u0435\\u0440\\u0432\\u044b\\u0435\", \"price\": 23423.0, \"name\": \"\\u0411\\u043e\\u0440\\u0449 \\u0441 \\u0447\\u0435\\u0441\\u043d\\u043e\\u043a\\u043e\\u043c\", \"weight\": \"234\"}, {\"category\": \"\\u0425\\u043e\\u043b\\u043e\\u0434\\u043d\\u044b\\u0435\", \"price\": 234.0, \"name\": \"\\u0421\\u0430\\u043b\\u0430\\u0442 \\u043a\\u0440\\u0430\\u0431\\u043e\\u0432\\u044b\\u0439 \\u0441 \\u043e\\u0433\\u0443\\u0440\\u0446\\u043e\\u043c\", \"weight\": \"234234\"}, {\"category\": \"\\u0412\\u044b\\u0447\\u0435\\u0447\\u043a\\u0430\", \"price\": 2340.0, \"name\": \"\\u041f\\u0438\\u0440\\u043e\\u0436\\u043e\\u043a\", \"weight\": \"12\"}]}, {\"canteen_name\": \"retyerty\", \"menu_items\": []}, {\"canteen_name\": \"\\u0421\\u0442\\u043e\\u043b\\u043e\\u0432\\u0430\\u044f 1\", \"menu_items\": []}], \"metadata\": \"SibSAU Canteens Menu\"}";
+//    private static final String SAMPLE_JSON_RESPONSE = "{\"canteens_menu\": [{\"canteen_name\": \"fghjfghjfghj\", \"menu_items\": [{\"category\": \"\\u041f\\u0435\\u0440\\u0432\\u044b\\u0435\", \"price\": 23423.0, \"name\": \"\\u0411\\u043e\\u0440\\u0449 \\u0441 \\u0447\\u0435\\u0441\\u043d\\u043e\\u043a\\u043e\\u043c\", \"weight\": \"23423\"}, {\"category\": \"\\u0425\\u043e\\u043b\\u043e\\u0434\\u043d\\u044b\\u0435\", \"price\": 123.0, \"name\": \"\\u0421\\u0430\\u043b\\u0430\\u0442 \\u043a\\u0440\\u0430\\u0431\\u043e\\u0432\\u044b\\u0439 \\u0441 \\u043e\\u0433\\u0443\\u0440\\u0446\\u043e\\u043c\", \"weight\": \"123\"}]}, {\"canteen_name\": \"ghjfghjghj\", \"menu_items\": [{\"category\": \"\\u041f\\u0435\\u0440\\u0432\\u044b\\u0435\", \"price\": 23423.0, \"name\": \"\\u0411\\u043e\\u0440\\u0449 \\u0441 \\u0447\\u0435\\u0441\\u043d\\u043e\\u043a\\u043e\\u043c\", \"weight\": \"234\"}, {\"category\": \"\\u0425\\u043e\\u043b\\u043e\\u0434\\u043d\\u044b\\u0435\", \"price\": 234.0, \"name\": \"\\u0421\\u0430\\u043b\\u0430\\u0442 \\u043a\\u0440\\u0430\\u0431\\u043e\\u0432\\u044b\\u0439 \\u0441 \\u043e\\u0433\\u0443\\u0440\\u0446\\u043e\\u043c\", \"weight\": \"234234\"}, {\"category\": \"\\u0412\\u044b\\u0447\\u0435\\u0447\\u043a\\u0430\", \"price\": 2340.0, \"name\": \"\\u041f\\u0438\\u0440\\u043e\\u0436\\u043e\\u043a\", \"weight\": \"12\"}]}, {\"canteen_name\": \"retyerty\", \"menu_items\": []}, {\"canteen_name\": \"\\u0421\\u0442\\u043e\\u043b\\u043e\\u0432\\u0430\\u044f 1\", \"menu_items\": []}], \"metadata\": \"SibSAU Canteens Menu\"}";
+    private static final String SAMPLE_JSON_RESPONSE = "{\"canteens_menu\": [{\"canteen_name\": \"\\u0411\\u0443\\u0444\\u0435\\u0442 \\u043a\\u043e\\u0440\\u043f\\u0443\\u0441 \\\"\\u041b\\\" \\u0421\\u0438\\u0431\\u0413\\u0410\\u0423\", \"menu_items\": [{\"category\": \"\\u0425\\u041e\\u041b\\u041e\\u0414\\u041d\\u042b\\u0415 \\u0411\\u041b\\u042e\\u0414\\u0410\", \"price\": 26.04, \"name\": \"\\u0421\\u0430\\u043b\\u0430\\u0442 \\u0438\\u0437 \\u0441\\u0432\\u0435\\u0436\\u0438\\u0445 \\u043e\\u0433\\u0443\\u0440\\u0446\\u043e\\u0432, \\u0441\\u0432\\u0435\\u0436\\u0438\\u0445 \\u043f\\u043e\\u043c\\u0438\\u0434\\u043e\\u0440, \\u0441 \\u043c\\u0430\\u0439\\u043d\\u0435\\u0437\\u043e\\u043c , \\u043f\\u0435\\u0442\\u0440\\u0443\\u0448\\u043a\\u043e\\u0439\", \"weight\": \"40/40/20/2\"}, {\"category\": \"\\u0425\\u041e\\u041b\\u041e\\u0414\\u041d\\u042b\\u0415 \\u0411\\u041b\\u042e\\u0414\\u0410\", \"price\": 9.44, \"name\": \"\\u0421\\u0430\\u043b\\u0430\\u0442 \\\"\\u041b\\u044e\\u0431\\u0438\\u0442\\u0435\\u043b\\u044c\\u0441\\u043a\\u0438\\u0439\\u00bb \\u0441\\u043e \\u0441\\u0432\\u0435\\u0436\\u0438\\u043c\\u0438 \\u043f\\u043e\\u043c\\u0438\\u0434\\u043e\\u0440\\u0430\\u043c\\u0438 , \\u043f\\u0435\\u0442\\u0440\\u0443\\u0448\\u043a\\u043e\\u0439 ( \\u043a\\u0430\\u043f\\u0443\\u0441\\u0442\\u0430 \\u0441\\u0432\\u0435\\u0436\\u0430\\u044f, \\u043a\\u0438\\u0441\\u043b\\u043e\\u0442\\u0430 \\u043b\\u0438\\u043c\\u043e\\u043d\\u0430\\u044f ,\\u043f\\u043e\\u043c\\u0438\\u0434\\u043e\\u0440\\u044b \\u0441\\u0432\\u0435\\u0436\\u0438\\u0435,\\u0441\\u0430\\u0445\\u0430\\u0440, \\u043c\\u0430\\u0441\\u043b\\u043e \\u0440\\u0430\\u0441\\u0442\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u043e\\u0435)\", \"weight\": \"100/2\"}, {\"category\": \"\\u0425\\u041e\\u041b\\u041e\\u0414\\u041d\\u042b\\u0415 \\u0411\\u041b\\u042e\\u0414\\u0410\", \"price\": 11.96, \"name\": \"\\u0421\\u0432\\u0435\\u043a\\u043b\\u0430 \\u0441 \\u0441\\u044b\\u0440\\u043e\\u043c, \\u0447\\u0435\\u0441\\u043d\\u043e\\u043a\\u043e\\u043c, \\u043c\\u0430\\u0439\\u043e\\u043d\\u0435\\u0437\\u043e\\u043c\", \"weight\": \"85/15\"}, {\"category\": \"2-\\u0435 \\u0411\\u041b\\u042e\\u0414\\u0410\", \"price\": 11.94, \"name\": \"\\u041a\\u0430\\u0448\\u0430 \\u043c\\u043e\\u043b\\u043e\\u0447\\u043d\\u0430\\u044f \\u043f\\u0448\\u0435\\u043d\\u043d\\u0430\\u044f \\u0441 \\u0441\\u043b\\u0438\\u0432\\u043e\\u0447\\u043d\\u044b\\u043c \\u043c\\u0430\\u0441\\u043b\\u043e\\u043c\", \"weight\": \"200/10\"}, {\"category\": \"2-\\u0435 \\u0411\\u041b\\u042e\\u0414\\u0410\", \"price\": 34.86, \"name\": \"\\u041f\\u0435\\u0447\\u0435\\u043d\\u044c \\u043f\\u043e -\\u0441\\u0442\\u0440\\u043e\\u0433\\u0430\\u043d\\u043e\\u0432\\u0441\\u043a\\u0438 (\\u043f\\u0435\\u0447\\u0435\\u043d\\u044c, \\u0441\\u043c\\u0435\\u0442\\u0430\\u043d\\u0430, \\u043c\\u0430\\u0439\\u043e\\u043d\\u0435\\u0437,\\u0442\\u043e\\u043c\\u0430\\u0442\\u043d\\u0430\\u044f \\u043f\\u0430\\u0441\\u0442\\u0430, \\u0441\\u043f\\u0435\\u0446\\u0438\\u0438, \\u043c\\u0430\\u0441\\u043b\\u043e \\u0440\\u0430\\u0441\\u0442\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u043e\\u0435)\", \"weight\": \"75/75\"}, {\"category\": \"2-\\u0435 \\u0411\\u041b\\u042e\\u0414\\u0410\", \"price\": 33.17, \"name\": \"\\u041f\\u043b\\u043e\\u0432 \\u0441 \\u0444\\u0438\\u043b\\u0435 \\u043a\\u0443\\u0440\\u0438\\u0446\\u044b (\\u0440\\u0438\\u0441, \\u043a\\u0443\\u0440\\u0438\\u043d\\u043e\\u0435 \\u0444\\u0438\\u043b\\u0435.\\u043b\\u0443\\u043a, \\u043c\\u043e\\u0440\\u043a\\u043e\\u0432\\u044c, \\u0442\\u043e\\u043c\\u0430\\u0442\\u043d\\u0430\\u044f \\u043f\\u0430\\u0441\\u0442\\u0430,\\u0441\\u043f\\u0435\\u0446\\u0438\\u0438,\\u043c\\u0430\\u0441\\u043b\\u043e \\u0440\\u0430\\u0441\\u0442\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u043e\\u0435)\", \"weight\": \"50/200\"}, {\"category\": \"1-\\u0435 \\u0411\\u041b\\u042e\\u0414\\u0410\", \"price\": 15.3, \"name\": \"\\u0411\\u043e\\u0440\\u0449 \\u0438\\u0437 \\u0441\\u0432\\u0435\\u0436\\u0435\\u0439 \\u043a\\u0430\\u043f\\u0443\\u0441\\u0442\\u044b \\u0441 \\u043c\\u044f\\u0441\\u043e\\u043c \\u0433\\u043e\\u0432\\u044f\\u0434\\u0438\\u043d\\u044b, \\u0441\\u043e \\u0441\\u043c\\u0435\\u0442\\u0430\\u043d\\u043e\\u0439(\\u043a\\u0430\\u043f\\u0443\\u0441\\u0442\\u0430 \\u0441\\u0432\\u0435\\u0436,\\u043c\\u043e\\u0440\\u043a\\u043e\\u0432\\u044c, \\u0441\\u0432\\u0435\\u043a\\u043b\\u0430, \\u043b\\u0443\\u043a, \\u043c\\u044f\\u0441\\u043e \\u0433\\u043e\\u0432, \\u0442\\u043e\\u043c \\u043f\\u0430\\u0441\\u0442\\u0430, \\u0441\\u043c\\u0435\\u0442\\u0430\\u043d\\u0430)\", \"weight\": \"250/12/10\"}, {\"category\": \"2-\\u0435 \\u0411\\u041b\\u042e\\u0414\\u0410\", \"price\": 16.26, \"name\": \"\\u0421\\u043e\\u0441\\u0438\\u0441\\u043a\\u0430 \\u043e\\u0442\\u0432\\u0430\\u0440\\u043d\\u0430\\u044f \", \"weight\": \"60\"}, {\"category\": \"2-\\u0435 \\u0411\\u041b\\u042e\\u0414\\u0410\", \"price\": 26.77, \"name\": \"\\u0426\\u044b\\u043f\\u043b\\u044f\\u0442\\u0430 \\u043e\\u0442\\u0432\\u0430\\u0440\\u043d\\u044b\\u0435\", \"weight\": \"100\"}, {\"category\": \"\\u0413\\u0410\\u0420\\u041d\\u0418\\u0420\\u042b\", \"price\": 1.31, \"name\": \"\\u041c\\u0430\\u0439\\u043e\\u043d\\u0435\\u0437\", \"weight\": \"10\"}, {\"category\": \"\\u0413\\u0410\\u0420\\u041d\\u0418\\u0420\\u042b\", \"price\": 3.33, \"name\": \"\\u0421\\u043e\\u0443\\u0441 \\u0441\\u043c\\u0435\\u0442\\u0430\\u043d\\u043d\\u044b\\u0439 (\\u0441\\u043c\\u0435\\u0442\\u0430\\u043d\\u0430, \\u043c\\u0443\\u043a\\u0430, \\u0441\\u043f\\u0435\\u0446\\u0438\\u0438)\", \"weight\": \"50\"}, {\"category\": \"\\u0413\\u0410\\u0420\\u041d\\u0418\\u0420\\u042b\", \"price\": 3.68, \"name\": \"\\u041c\\u0430\\u0441\\u043b\\u043e \\u0441\\u043b\\u0438\\u0432\\u043e\\u0447\\u043d\\u043e\\u0435\", \"weight\": \"10\"}, {\"category\": \"\\u0413\\u0410\\u0420\\u041d\\u0418\\u0420\\u042b\", \"price\": 5.27, \"name\": \"\\u0420\\u043e\\u0436\\u043a\\u0438 \\u043e\\u0442\\u0432\\u0430\\u0440\\u043d\\u044b\\u0435\", \"weight\": \"150\"}, {\"category\": \"\\u041d\\u0410\\u041f\\u0418\\u0422\\u041a\\u0418\", \"price\": 3.98, \"name\": \"\\u041a\\u043e\\u043c\\u043f\\u043e\\u0442 \\u0438\\u0437 \\u0441\\u0443\\u0445\\u043e\\u0444\\u0440\\u0443\\u043a\\u0442\\u043e\\u0432\", \"weight\": \"200\"}, {\"category\": \"\\u041d\\u0410\\u041f\\u0418\\u0422\\u041a\\u0418\", \"price\": 1.89, \"name\": \"\\u0427\\u0430\\u0439 \\u0447\\u0435\\u0440\\u043d\\u044b\\u0439 \", \"weight\": \"2\"}, {\"category\": \"\\u041d\\u0410\\u041f\\u0418\\u0422\\u041a\\u0418\", \"price\": 1.84, \"name\": \"\\u0427\\u0430\\u0439 \\u0437\\u0435\\u043b\\u0435\\u043d\\u044b\\u0439 \", \"weight\": \"2\"}, {\"category\": \"\\u0412\\u042b\\u041f\\u0415\\u0427\\u041a\\u0410\", \"price\": 4.35, \"name\": \"\\u041f\\u0438\\u0440\\u043e\\u0436\\u043a\\u0438 \\u043f\\u0435\\u0447\\u0435\\u043d\\u044b\\u0435 \\u0441 \\u043a\\u0430\\u0440\\u0442\\u043e\\u0444\\u0435\\u043b\\u0435\\u043c \", \"weight\": \"75\"}, {\"category\": \"\\u0412\\u042b\\u041f\\u0415\\u0427\\u041a\\u0410\", \"price\": 4.44, \"name\": \"\\u041f\\u0438\\u0440\\u043e\\u0436\\u043a\\u0438 \\u043f\\u0435\\u0447\\u0435\\u043d\\u044b\\u0435 \\u0441 \\u0440\\u0438\\u0441\\u043e\\u043c \\u044f\\u0439\\u0446\\u043e\\u043c\", \"weight\": \"75\"}, {\"category\": \"\\u0412\\u042b\\u041f\\u0415\\u0427\\u041a\\u0410\", \"price\": 4.19, \"name\": \"\\u0422\\u0440\\u0443\\u0431\\u043e\\u0447\\u043a\\u0430 \\u043f\\u0435\\u0441\\u043e\\u0447\\u043d\\u0430\\u044f\", \"weight\": \"50\"}, {\"category\": \"\\u0412\\u042b\\u041f\\u0415\\u0427\\u041a\\u0410\", \"price\": 1.63, \"name\": \"\\u0425\\u043b\\u0435\\u0431 \\u043f\\u0448\\u0435\\u043d\\u0438\\u0447\\u043d\\u044b\\u0439\", \"weight\": \"40\"}, {\"category\": \"\\u0412\\u042b\\u041f\\u0415\\u0427\\u041a\\u0410\", \"price\": 1.63, \"name\": \"\\u0425\\u043b\\u0435\\u0431 \\u0440\\u0436\\u0430\\u043d\\u043e\\u0439\", \"weight\": \"40\"}]}]}";
+
 
     /**
      * Create a private constructor because no one should ever create a {@link QueryUtils} object.
@@ -42,7 +44,7 @@ public class QueryUtils {
      * Return a list of {@link Dish} objects that has been built up from
      * parsing a JSON response.
      */
-    public static ArrayList<Dish> extractDishes() {
+    public static ArrayList<Dish> extractDishes(int canteenCode) {
 
         // Create an empty ArrayList that we can start adding dishes to
         ArrayList<Dish> dishes = new ArrayList<>();
@@ -61,41 +63,48 @@ public class QueryUtils {
 //            JSONArray dishArray = baseJsonResponse.getJSONArray("canteens_menu");
             JSONArray canteensArray = baseJsonResponse.getJSONArray("canteens_menu");
 
-            //As an example let's extract very first canteen json object
-            JSONObject currentCanteen = canteensArray.getJSONObject(1);
-            JSONArray dishArray = currentCanteen.getJSONArray("menu_items");
+//            Если в нашем массиве столовых записей больше чем переданный код индекс,
+// тогда делаем что-то, а если нет, то массив блюд остается пустым.
+//            НО всё-таки стоит проверять по названию столовой!!!!!!!!!
 
-            // For each earthquake in the earthquakeArray, create an {@link Earthquake} object
-            for (int i = 0; i < dishArray.length(); i++) {
+            if (canteensArray.length() > canteenCode){
+                //As an example let's extract very first canteen json object
+                JSONObject currentCanteen = canteensArray.getJSONObject(canteenCode);
+                JSONArray dishArray = currentCanteen.getJSONArray("menu_items");
 
-                // Get a single earthquake at position i within the list of earthquakes
-                JSONObject properties = dishArray.getJSONObject(i);
+                // For each earthquake in the earthquakeArray, create an {@link Earthquake} object
+                for (int i = 0; i < dishArray.length(); i++) {
 
-                // For a given earthquake, extract the JSONObject associated with the
-                // key called "properties", which represents a list of all properties
-                // for that earthquake.
+                    // Get a single earthquake at position i within the list of earthquakes
+                    JSONObject properties = dishArray.getJSONObject(i);
+
+                    // For a given earthquake, extract the JSONObject associated with the
+                    // key called "properties", which represents a list of all properties
+                    // for that earthquake.
 //                JSONObject properties = currentEarthquake.getJSONObject("properties");
 //                JSONObject properties = currentEarthquake.getJSONObject("menu_items");
 
-                // Извлекаем название блюда
-                String name = properties.getString("name");
+                    // Извлекаем название блюда
+                    String name = properties.getString("name");
 
-                // Извлекаем вес блюда
-                double weight = properties.getDouble("weight");
+                    // Извлекаем вес блюда
+//                    double weight = properties.getDouble("weight");
+                    double weight = properties.getDouble("price");
 
-                // извлекаем цену блюда
-                double price = properties.getDouble("price");
+                    // извлекаем цену блюда
+                    double price = properties.getDouble("price");
 
-                // Извлекаем категорию блюда
-                String category = properties.getString("category");
+                    // Извлекаем категорию блюда
+                    String category = properties.getString("category");
 
 
-                // Create a new {@link Earthquake} object with the magnitude, location, and time
-                // from the JSON response.
-                Dish dish = new Dish(name, weight, price, category);
+                    // Create a new {@link Earthquake} object with the magnitude, location, and time
+                    // from the JSON response.
+                    Dish dish = new Dish(name, weight, price, category);
 
-                // Add the new {@link Earthquake} to the list of earthquakes.
-                dishes.add(dish);
+                    // Add the new {@link Earthquake} to the list of earthquakes.
+                    dishes.add(dish);
+                }
             }
 
         } catch (JSONException e) {
