@@ -1,84 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/activity_main"
+<!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<ListView-->
+        <!--android:id="@+id/list"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:divider="@null"-->
+        <!--android:dividerHeight="0dp"/>-->
+
+    <!--&lt;!&ndash; Empty view is only visible when the list has no items. &ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:id="@+id/empty_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:textAppearance="?android:textAppearanceMedium"/>-->
+
+    <!--&lt;!&ndash; Loading indicator is only shown before the first load &ndash;&gt;-->
+    <!--<ProgressBar-->
+        <!--android:id="@+id/loading_indicator"-->
+        <!--style="@style/Widget.AppCompat.ProgressBar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"/>-->
+
+<!--</RelativeLayout>-->
+
+<LinearLayout android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="ru.sibsau.universitycanteen.MainActivity">
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <android.support.design.widget.TabLayout
-        android:id="@+id/sliding_tabs"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_gravity="bottom"
-        app:tabMode="scrollable"/>
+    <!-- Столовая 1 -->
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorCanteen1">
+    <TextView
+    android:id="@+id/canteen_1"
+    style="@style/CategoryStyle"
+    android:background="?android:attr/selectableItemBackground"
+    android:text="@string/canteen_1" />
+    </FrameLayout>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <!-- Столовая 2 -->
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorCanteen2">
+    <TextView
+    android:id="@+id/canteen_2"
+    style="@style/CategoryStyle"
+    android:background="?android:attr/selectableItemBackground"
+    android:text="@string/canteen_2" />
+    </FrameLayout>
 
-    <!--&lt;!&ndash; Столовая 1 &ndash;&gt;-->
-    <!--<FrameLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:background="@color/colorCanteen1">-->
-    <!--<TextView-->
-    <!--android:id="@+id/canteen_1"-->
-    <!--style="@style/CategoryStyle"-->
-    <!--android:background="?android:attr/selectableItemBackground"-->
-    <!--android:text="@string/canteen_1" />-->
-    <!--</FrameLayout>-->
+    <!-- Столовая 3 -->
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorCanteen3">
+    <TextView
+    android:id="@+id/canteen_3"
+    style="@style/CategoryStyle"
+    android:background="?android:attr/selectableItemBackground"
+    android:text="@string/canteen_3" />
+    </FrameLayout>
 
-    <!--&lt;!&ndash; Столовая 2 &ndash;&gt;-->
-    <!--<FrameLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:background="@color/colorCanteen2">-->
-    <!--<TextView-->
-    <!--android:id="@+id/canteen_2"-->
-    <!--style="@style/CategoryStyle"-->
-    <!--android:background="?android:attr/selectableItemBackground"-->
-    <!--android:text="@string/canteen_2" />-->
-    <!--</FrameLayout>-->
+    <!-- Буфет П -->
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBufetP">
+    <TextView
+    android:id="@+id/bufet_p"
+    style="@style/CategoryStyle"
+    android:background="?android:attr/selectableItemBackground"
+    android:text="@string/bufet_p" />
+    </FrameLayout>
 
-    <!--&lt;!&ndash; Столовая 3 &ndash;&gt;-->
-    <!--<FrameLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:background="@color/colorCanteen3">-->
-    <!--<TextView-->
-    <!--android:id="@+id/canteen_3"-->
-    <!--style="@style/CategoryStyle"-->
-    <!--android:background="?android:attr/selectableItemBackground"-->
-    <!--android:text="@string/canteen_3" />-->
-    <!--</FrameLayout>-->
+    <!-- Буфет Л -->
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBufetL">
+    <TextView
+    android:id="@+id/bufet_l"
+    style="@style/CategoryStyle"
+    android:background="?android:attr/selectableItemBackground"
+    android:text="@string/bufet_l" />
+    </FrameLayout>
 
-    <!--&lt;!&ndash; Буфет П &ndash;&gt;-->
-    <!--<FrameLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:background="@color/colorBufetP">-->
-    <!--<TextView-->
-    <!--android:id="@+id/bufet_p"-->
-    <!--style="@style/CategoryStyle"-->
-    <!--android:background="?android:attr/selectableItemBackground"-->
-    <!--android:text="@string/bufet_p" />-->
-    <!--</FrameLayout>-->
-
-    <!--&lt;!&ndash; Буфет Л &ndash;&gt;-->
-    <!--<FrameLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:background="@color/colorBufetL">-->
-    <!--<TextView-->
-    <!--android:id="@+id/bufet_l"-->
-    <!--style="@style/CategoryStyle"-->
-    <!--android:background="?android:attr/selectableItemBackground"-->
-    <!--android:text="@string/bufet_l" />-->
-    <!--</FrameLayout>-->
-
-
+    <!-- Буфет Л -->
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray">
+    <TextView
+    android:id="@+id/info"
+    style="@style/CategoryStyle"
+    android:background="?android:attr/selectableItemBackground"
+    android:text="Информация о столовых" />
+    </FrameLayout>
 </LinearLayout>
