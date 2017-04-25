@@ -9,15 +9,12 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static ru.sibsau.universitycanteen.DishLoader.LOG_TAG;
 
 /**
  * Created by user on 02.03.17.
@@ -55,23 +52,28 @@ public class CanteenActivity extends AppCompatActivity
         // in order to figure out if we're creating a new pet or editing an existing one.
         Intent intent = getIntent();
         mCurrentCanteenUri = intent.getData();
-        Log.e(LOG_TAG, "CanteenActivity sended URI: " + mCurrentCanteenUri);
+//        Log.e(LOG_TAG, "CanteenActivity sended URI: " + mCurrentCanteenUri);
 
         switch (mCurrentCanteenUri.toString()){
             case "1":
-                Log.e(LOG_TAG, "CanteenActivity 1 HERE!!!!!!!!!!");
+//                Log.e(LOG_TAG, "CanteenActivity 1 HERE!!!!!!!!!!");
+                setTitle("Столовая №1");
                 MENU_REQUEST_URL = "http://menu.pld.sibsau.ru/android/canteens_2?canteen_code=1";
                 break;
             case "2":
+                setTitle("Столовая №2");
                 MENU_REQUEST_URL = "http://menu.pld.sibsau.ru/android/canteens_2?canteen_code=2";
                 break;
             case "3":
+                setTitle("Столовая №3");
                 MENU_REQUEST_URL = "http://menu.pld.sibsau.ru/android/canteens_2?canteen_code=3";
                 break;
             case "4":
+                setTitle("Буфет корпуса П");
                 MENU_REQUEST_URL = "http://menu.pld.sibsau.ru/android/canteens_2?canteen_code=4";
                 break;
             case "5":
+                setTitle("Буфет корпуса Л");
                 MENU_REQUEST_URL = "http://menu.pld.sibsau.ru/android/canteens_2?canteen_code=5";
                 break;
         }
@@ -112,6 +114,12 @@ public class CanteenActivity extends AppCompatActivity
             mEmptyStateTextView.setText(R.string.no_internet_connection);
         }
     }
+
+//    @Override
+//    public void onBackPressed() {
+//        super.onBackPressed();
+//        return;
+//    }
 
     @Override
     public Loader<List<Dish>> onCreateLoader(int i, Bundle bundle) {

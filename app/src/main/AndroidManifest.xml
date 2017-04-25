@@ -19,8 +19,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".CanteenActivity"/>
-        <activity android:name=".Canteen2Activity"/>
+        <activity
+            android:name=".CanteenActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <!--<activity android:name=".Canteen2Activity"/>-->
             <!--android:label="Canteen"-->
             <!--android:parentActivityName=".MainActivity"/>-->
     </application>
