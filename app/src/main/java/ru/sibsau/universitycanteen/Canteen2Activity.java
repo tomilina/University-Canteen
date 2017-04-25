@@ -23,7 +23,8 @@ public class Canteen2Activity extends AppCompatActivity
 
     /** URL for earthquake data from the USGS dataset */
     private static final String USGS_REQUEST_URL =
-            "http://172.17.11.218:8069/android/canteens_2?canteen_code=2";
+            "https://menu.pld.sibsau.ru/android/canteens_2?canteen_code=2";
+//            "http://172.17.11.218:8069/android/canteens_2?canteen_code=2";
 
     /**
      * Constant value for the earthquake loader ID. We can choose any integer.

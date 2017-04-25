@@ -85,28 +85,57 @@ public class QueryUtils {
     private static String makeHttpRequest(URL url) throws IOException {
         String jsonResponse = "";
 
-        // If the URL is null, then return early.
-        if (url == null) {
+//            Если url пустая строка
+        if(url == null){
+            Log.e("MainActivity","Dish - makeHttpRequest URL: " + url);
             return jsonResponse;
         }
 
+
+        URL resourceUrl, base, next;
+        String location;
         HttpURLConnection urlConnection = null;
         InputStream inputStream = null;
+
         try {
             urlConnection = (HttpURLConnection) url.openConnection();
+            urlConnection.setRequestMethod("GET");
             urlConnection.setReadTimeout(10000 /* milliseconds */);
             urlConnection.setConnectTimeout(15000 /* milliseconds */);
-            urlConnection.setRequestMethod("GET");
             urlConnection.connect();
 
-            // If the request was successful (response code 200),
-            // then read the input stream and parse the response.
-            if (urlConnection.getResponseCode() == 200) {
-                inputStream = urlConnection.getInputStream();
-                jsonResponse = readFromStream(inputStream);
-            } else {
-                Log.e(LOG_TAG, "Error response code: " + urlConnection.getResponseCode());
+//                Только если сервер ответил успехом делаем действия
+//                Log.e("MainActivity","Dish - server response: " + urlConnection.getResponseCode());
+//                if ( urlConnection.getResponseCode()==200 || urlConnection.getResponseCode()==301) {
+//                    inputStream = urlConnection.getInputStream();
+//                    jsonResponse = readFromStream(inputStream);
+//                    Log.e("MainActivity","Dish - server response: " + jsonResponse);
+//                }
+//                http://stackoverflow.com/questions/1884230/urlconnection-doesnt-follow-redirect
+            switch (urlConnection.getResponseCode())
+            {
+                case HttpURLConnection.HTTP_ACCEPTED:
+                    inputStream = urlConnection.getInputStream();
+                    jsonResponse = readFromStream(inputStream);
+//                    redirecting the response
+                case HttpURLConnection.HTTP_MOVED_PERM:
+                case HttpURLConnection.HTTP_MOVED_TEMP:
+                    location = urlConnection.getHeaderField("Location");
+                    base     = url;
+                    next     = new URL(base, location);  // Deal with relative URLs
+                    url      = new URL(next.toExternalForm());
+                    urlConnection = (HttpURLConnection) url.openConnection();
+                    urlConnection.setRequestMethod("GET");
+                    urlConnection.setReadTimeout(10000 /* milliseconds */);
+                    urlConnection.setConnectTimeout(15000 /* milliseconds */);
+                    urlConnection.connect();
+                    inputStream = urlConnection.getInputStream();
+                    jsonResponse = readFromStream(inputStream);
             }
+
+//            else {
+//                Log.e(LOG_TAG, "Error response code: " + urlConnection.getResponseCode());
+//            }
         } catch (IOException e) {
             Log.e(LOG_TAG, "Problem retrieving the earthquake JSON results.", e);
         } finally {

@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Canteen1Activity"/>
+        <activity android:name=".CanteenActivity"/>
         <activity android:name=".Canteen2Activity"/>
             <!--android:label="Canteen"-->
             <!--android:parentActivityName=".MainActivity"/>-->

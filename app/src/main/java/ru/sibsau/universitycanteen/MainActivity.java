@@ -1,6 +1,7 @@
 package ru.sibsau.universitycanteen;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -23,10 +24,12 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent numbersIntent = new Intent(MainActivity.this, Canteen1Activity.class);
-
-                // Start the new activity
-                startActivity(numbersIntent);
+                Intent intent = new Intent(MainActivity.this, CanteenActivity.class);
+                Uri uri = Uri.parse("1");
+//                send data
+                intent.setData(uri);
+//                 Start the new activity
+                startActivity(intent);
             }
         });
 
@@ -39,10 +42,12 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent numbersIntent = new Intent(MainActivity.this, Canteen2Activity.class);
-
+                Intent intent = new Intent(MainActivity.this, CanteenActivity.class);
+                Uri uri = Uri.parse("2");
+//                send data
+                intent.setData(uri);
                 // Start the new activity
-                startActivity(numbersIntent);
+                startActivity(intent);
             }
         });
 
