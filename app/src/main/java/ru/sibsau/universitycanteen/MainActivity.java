@@ -51,6 +51,59 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
+        // Find the View that shows the canteen_3 category
+        TextView canteen_3 = (TextView) findViewById(R.id.canteen_3);
+
+        // Set a click listener on that View
+        canteen_3.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent intent = new Intent(MainActivity.this, CanteenActivity.class);
+                Uri uri = Uri.parse("3");
+//                send data
+                intent.setData(uri);
+                // Start the new activity
+                startActivity(intent);
+            }
+        });
+
+        // Find the View that shows the bufet_p category
+        TextView bufet_p = (TextView) findViewById(R.id.bufet_p);
+
+        // Set a click listener on that View
+        bufet_p.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent intent = new Intent(MainActivity.this, CanteenActivity.class);
+                Uri uri = Uri.parse("4");
+//                send data
+                intent.setData(uri);
+                // Start the new activity
+                startActivity(intent);
+            }
+        });
+        // Find the View that shows the bufet_p category
+        TextView bufet_l = (TextView) findViewById(R.id.bufet_l);
+
+        // Set a click listener on that View
+        bufet_l.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent intent = new Intent(MainActivity.this, CanteenActivity.class);
+                Uri uri = Uri.parse("5");
+//                send data
+                intent.setData(uri);
+                // Start the new activity
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

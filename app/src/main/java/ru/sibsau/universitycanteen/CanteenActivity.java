@@ -65,6 +65,15 @@ public class CanteenActivity extends AppCompatActivity
             case "2":
                 MENU_REQUEST_URL = "http://menu.pld.sibsau.ru/android/canteens_2?canteen_code=2";
                 break;
+            case "3":
+                MENU_REQUEST_URL = "http://menu.pld.sibsau.ru/android/canteens_2?canteen_code=3";
+                break;
+            case "4":
+                MENU_REQUEST_URL = "http://menu.pld.sibsau.ru/android/canteens_2?canteen_code=4";
+                break;
+            case "5":
+                MENU_REQUEST_URL = "http://menu.pld.sibsau.ru/android/canteens_2?canteen_code=5";
+                break;
         }
 
         // Find a reference to the {@link ListView} in the layout
