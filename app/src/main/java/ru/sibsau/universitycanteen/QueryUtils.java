@@ -203,8 +203,7 @@ public class QueryUtils {
                     String name = menuItem.getString("name");
 
                     // Извлекаем вес блюда
-//                    double weight = properties.getDouble("weight");
-                    double weight = menuItem.getDouble("price");
+                   String weight = menuItem.getString("weight");
 
                     // извлекаем цену блюда
                     double price = menuItem.getDouble("price");

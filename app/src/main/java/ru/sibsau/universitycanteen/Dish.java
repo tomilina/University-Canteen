@@ -7,12 +7,12 @@ package ru.sibsau.universitycanteen;
 public class Dish {
 
     private String mDishName;
-    private double mDishWeight;
+    private String mDishWeight;
     private double mDishPrice;
     private String mDishCategory;
 
 //    Конструктор
-    public Dish(String dishName, double dishWeight, double dishPrice, String dishCategory){
+    public Dish(String dishName, String dishWeight, double dishPrice, String dishCategory){
         mDishName = dishName;
         mDishWeight = dishWeight;
         mDishPrice = dishPrice;
