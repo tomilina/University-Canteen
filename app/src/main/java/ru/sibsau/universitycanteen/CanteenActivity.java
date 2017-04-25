@@ -47,6 +47,11 @@ public class CanteenActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dish_list);
+        // Find a reference to the {@link ListView} in the layout
+        ListView dishListView = (ListView) findViewById(R.id.list);
+
+        mEmptyStateTextView = (TextView) findViewById(R.id.empty_view);
+        dishListView.setEmptyView(mEmptyStateTextView);
 
         // Examine the intent that was used to launch this activity,
         // in order to figure out if we're creating a new pet or editing an existing one.
@@ -78,8 +83,6 @@ public class CanteenActivity extends AppCompatActivity
                 break;
         }
 
-        // Find a reference to the {@link ListView} in the layout
-        ListView dishListView = (ListView) findViewById(R.id.list);
 
         // Create a new adapter that takes an empty list of dishes as input
         mAdapter = new DishAdapter(this, new ArrayList<Dish>());
@@ -134,7 +137,7 @@ public class CanteenActivity extends AppCompatActivity
         loadingIndicator.setVisibility(View.GONE);
 
         // Set empty state text to display "No dishes found."
-//        mEmptyStateTextView.setText(R.string.no_dishes);
+        mEmptyStateTextView.setText(R.string.no_dishes);
 
         // Clear the adapter of previous earthquake data
         mAdapter.clear();
