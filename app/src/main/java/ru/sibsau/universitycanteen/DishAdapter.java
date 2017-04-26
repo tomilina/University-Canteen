@@ -16,7 +16,8 @@ import java.util.ArrayList;
 
 public class DishAdapter extends ArrayAdapter<Dish> {
 
-//private int mColorResourceId;
+//    private int mColorId;
+//    , int colorId
 
     public DishAdapter(Activity context, ArrayList<Dish> dishes) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
@@ -24,7 +25,7 @@ public class DishAdapter extends ArrayAdapter<Dish> {
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
         // going to use this second argument, so it can be any value. Here, we used 0.
         super(context, 0, dishes);
-//        mColorResourceId = colorResourceId;
+//        mColorId = colorId;
     }
 
     @Override
@@ -61,15 +62,13 @@ public class DishAdapter extends ArrayAdapter<Dish> {
         // set this text on the number TextView
         defaultTextView.setText(currentDish.getDishWeight());
 
-
-
 //        // Установим подходящий цвет подложки в сообветсвии с категорией
 //        // Set the theme color for the list item
 //        View textContainer = listItemView.findViewById(R.id.text_container);
-//        // Find the color that the resource ID maps to
-////        int color = ContextCompat.getColor(getContext(), mColorResourceId);
-////        // Set the background color of the text container View
-////        textContainer.setBackgroundColor(color);
+//
+//        int color = ContextCompat.getColor(getContext(), mColorId);
+//        // Set the background color of the text container View
+//        textContainer.setBackgroundColor(color);
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView

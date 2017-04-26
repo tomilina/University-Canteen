@@ -1,109 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<RelativeLayout-->
-    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--<ListView-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:id="@+id/canteen_list"-->
+<!--android:orientation="vertical"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:drawSelectorOnTop="true"/>-->
+
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:columnWidth="90dp"
+    android:numColumns="2"
+    android:verticalSpacing="5dp"
+    android:horizontalSpacing="5dp"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    />
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
     <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent">-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
 
-    <!--<ListView-->
-        <!--android:id="@+id/list"-->
-        <!--android:orientation="vertical"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:divider="@null"-->
-        <!--android:dividerHeight="0dp"/>-->
+    <!--android:stretchMode="columnWidth"-->
 
-    <!--&lt;!&ndash; Empty view is only visible when the list has no items. &ndash;&gt;-->
+    <!--&lt;!&ndash; Столовая 1 &ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/colorCanteen1">-->
+
     <!--<TextView-->
-        <!--android:id="@+id/empty_view"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_centerInParent="true"-->
-        <!--android:textAppearance="?android:textAppearanceMedium"/>-->
+    <!--android:id="@+id/magnitude"-->
+    <!--android:layout_width="36dp"-->
+    <!--android:layout_height="36dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_margin="16dp"-->
+    <!--android:background="@drawable/openclose_circle"-->
+    <!--android:fontFamily="sans-serif-medium"-->
+    <!--android:gravity="center" />-->
 
-    <!--&lt;!&ndash; Loading indicator is only shown before the first load &ndash;&gt;-->
-    <!--<ProgressBar-->
-        <!--android:id="@+id/loading_indicator"-->
-        <!--style="@style/Widget.AppCompat.ProgressBar"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_centerInParent="true"/>-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="16dp">-->
 
-<!--</RelativeLayout>-->
+    <!--<TextView-->
+    <!--android:id="@+id/canteen_1"-->
+    <!--style="@style/CategoryStyle"-->
+    <!--android:text="@string/canteen_1" />-->
 
-<LinearLayout android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<TextView-->
+    <!--style="@style/CanteenLocationStyle"-->
+    <!--android:text="Корпус А, цоколь" />-->
+    <!--</LinearLayout>-->
 
-    <!-- Столовая 1 -->
-    <FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/colorCanteen1">
-    <TextView
-    android:id="@+id/canteen_1"
-    style="@style/CategoryStyle"
-    android:background="?android:attr/selectableItemBackground"
-    android:text="@string/canteen_1" />
-    </FrameLayout>
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="16dp">-->
 
-    <!-- Столовая 2 -->
-    <FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/colorCanteen2">
-    <TextView
-    android:id="@+id/canteen_2"
-    style="@style/CategoryStyle"
-    android:background="?android:attr/selectableItemBackground"
-    android:text="@string/canteen_2" />
-    </FrameLayout>
+    <!--<TextView-->
+    <!--style="@style/CanteenLocationStyle"-->
+    <!--android:text="часы работы:" />-->
 
-    <!-- Столовая 3 -->
-    <FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/colorCanteen3">
-    <TextView
-    android:id="@+id/canteen_3"
-    style="@style/CategoryStyle"
-    android:background="?android:attr/selectableItemBackground"
-    android:text="@string/canteen_3" />
-    </FrameLayout>
+    <!--<TextView-->
+    <!--style="@style/CanteenLocationStyle"-->
+    <!--android:text="11:00 - 15:30" />-->
+    <!--</LinearLayout>-->
 
-    <!-- Буфет П -->
-    <FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/colorBufetP">
-    <TextView
-    android:id="@+id/bufet_p"
-    style="@style/CategoryStyle"
-    android:background="?android:attr/selectableItemBackground"
-    android:text="@string/bufet_p" />
-    </FrameLayout>
+    <!--</LinearLayout>-->
 
-    <!-- Буфет Л -->
-    <FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/colorBufetL">
-    <TextView
-    android:id="@+id/bufet_l"
-    style="@style/CategoryStyle"
-    android:background="?android:attr/selectableItemBackground"
-    android:text="@string/bufet_l" />
-    </FrameLayout>
 
-    <!-- Буфет Л -->
-    <FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@android:color/darker_gray">
-    <TextView
-    android:id="@+id/info"
-    style="@style/CategoryStyle"
-    android:background="?android:attr/selectableItemBackground"
-    android:text="Информация о столовых" />
-    </FrameLayout>
-</LinearLayout>
+    <!--&lt;!&ndash; Столовая 2 &ndash;&gt;-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/canteen_2"&ndash;&gt;-->
+    <!--&lt;!&ndash;style="@style/CategoryStyle"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@color/colorCanteen2"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="@string/canteen_2" />&ndash;&gt;-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/colorCanteen2">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/canteen_2"-->
+    <!--style="@style/CategoryStyle"-->
+    <!--android:text="@string/canteen_2" />-->
+
+    <!--<TextView-->
+    <!--style="@style/CanteenLocationStyle"-->
+    <!--android:layout_below="@+id/canteen_2"-->
+    <!--android:text="Корпус C" />-->
+    <!--</RelativeLayout>-->
+
+    <!--&lt;!&ndash; Столовая 3 &ndash;&gt;-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/canteen_3"&ndash;&gt;-->
+    <!--&lt;!&ndash;style="@style/CategoryStyle"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@color/colorCanteen3"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="@string/canteen_3" />&ndash;&gt;-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/colorCanteen3">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/canteen_3"-->
+    <!--style="@style/CategoryStyle"-->
+    <!--android:text="@string/canteen_3" />-->
+
+    <!--<TextView-->
+    <!--style="@style/CanteenLocationStyle"-->
+    <!--android:layout_below="@+id/canteen_3"-->
+    <!--android:text="Общежитие №1" />-->
+    <!--</RelativeLayout>-->
+
+    <!--&lt;!&ndash; Буфет П &ndash;&gt;-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/bufet_p"&ndash;&gt;-->
+    <!--&lt;!&ndash;style="@style/CategoryStyle"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@color/colorBufetP"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="@string/bufet_p"/>&ndash;&gt;-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/colorBufetP">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/bufet_p"-->
+    <!--style="@style/CategoryStyle"-->
+    <!--android:text="@string/bufet_p" />-->
+
+    <!--<TextView-->
+    <!--style="@style/CanteenLocationStyle"-->
+    <!--android:layout_below="@+id/bufet_p"-->
+    <!--android:text=" " />-->
+    <!--</RelativeLayout>-->
+
+    <!--&lt;!&ndash; Буфет Л &ndash;&gt;-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/bufet_l"&ndash;&gt;-->
+    <!--&lt;!&ndash;style="@style/CategoryStyle"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@color/colorBufetL"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="@string/bufet_l" />&ndash;&gt;-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/colorBufetL">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/bufet_l"-->
+    <!--style="@style/CategoryStyle"-->
+    <!--android:text="@string/bufet_l" />-->
+
+    <!--<TextView-->
+    <!--style="@style/CanteenLocationStyle"-->
+    <!--android:layout_below="@+id/bufet_l"-->
+    <!--android:text=" " />-->
+    <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->

@@ -81,6 +81,9 @@ public class CanteenActivity extends AppCompatActivity
                 setTitle("Буфет корпуса Л");
                 MENU_REQUEST_URL = "http://menu.pld.sibsau.ru/android/canteens_2?canteen_code=5";
                 break;
+            default:
+                setTitle("Справка");
+                break;
         }
 
 
@@ -90,6 +93,21 @@ public class CanteenActivity extends AppCompatActivity
         // Set the adapter on the {@link ListView}
         // so the list can be populated in the user interface
         dishListView.setAdapter(mAdapter);
+
+//        dishListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+//                Dish currentDish = mAdapter.getItem(position);
+//
+//                // Convert the String URL into a URI object (to pass into the Intent constructor)
+////                Uri uri = Uri.parse(currentCanteen.getCanteenCode());
+//                Intent intent = new Intent(CanteenActivity.this, DishActivity.class);
+////                send data
+////                intent.setData(uri);
+//                // Start the new activity
+//                startActivity(intent);
+//            }
+//        });
 
         // Get a reference to the ConnectivityManager to check state of network connectivity
         ConnectivityManager connMgr = (ConnectivityManager)
@@ -107,7 +125,13 @@ public class CanteenActivity extends AppCompatActivity
             // the bundle. Pass in this activity for the LoaderCallbacks parameter (which is valid
             // because this activity implements the LoaderCallbacks interface).
             loaderManager.initLoader(DISH_LOADER_ID, null, this);
-        } else {
+        }
+//        else if (mCurrentCanteenUri.toString() == "0"){
+//            View loadingIndicator = findViewById(R.id.loading_indicator);
+//            loadingIndicator.setVisibility(View.GONE);
+//            mEmptyStateTextView.setText("Здесь будет справка");
+//        }
+        else {
             // Otherwise, display error
             // First, hide loading indicator so error message will be visible
             View loadingIndicator = findViewById(R.id.loading_indicator);
@@ -116,6 +140,8 @@ public class CanteenActivity extends AppCompatActivity
             // Update empty state with no connection error message
             mEmptyStateTextView.setText(R.string.no_internet_connection);
         }
+
+
     }
 
 //    @Override
@@ -138,6 +164,7 @@ public class CanteenActivity extends AppCompatActivity
 
         // Set empty state text to display "No dishes found."
         mEmptyStateTextView.setText(R.string.no_dishes);
+
 
         // Clear the adapter of previous earthquake data
         mAdapter.clear();

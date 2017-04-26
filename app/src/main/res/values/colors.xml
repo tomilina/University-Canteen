@@ -9,4 +9,6 @@
     <color name="colorCanteen3">#00C853</color>
     <color name="colorBufetP">#2196F3</color>
     <color name="colorBufetL">#E53935</color>
+
+    <color name="openclose">#FF4081</color>
 </resources>
