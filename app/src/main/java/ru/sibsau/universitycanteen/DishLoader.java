@@ -44,7 +44,7 @@ public class DishLoader extends AsyncTaskLoader<List<Dish>> {
             return null;
         }
 
-        // Perform the network request, parse the response, and extract a list of earthquakes.
+        // Perform the network request, parse the response, and extract a list of dishes
         List<Dish> dishes = QueryUtils.fetchDishData(mUrl);
         return dishes;
     }
