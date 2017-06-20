@@ -7,7 +7,7 @@ import android.util.Log;
 import java.util.List;
 
 /**
- * Loads a list of earthquakes by using an AsyncTask to perform the
+ * Loads a list of dishes by using an AsyncTask to perform the
  * network request to the given URL.
  */
 
